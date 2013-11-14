@@ -10,6 +10,6 @@
 using namespace std;
 
 int main() {
-	cout << "Test of updating project" << endl; // prints !!!Hello World!!!
+	cout << "updated a second time" << endl; // prints !!!Hello World!!!
 	return 0;
 }
