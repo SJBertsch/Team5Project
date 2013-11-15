@@ -7,8 +7,8 @@
 
 
 // Test file for linking
-#include <iostream>
-using namespace std;
+//# include <iostream>
+//using namespace std;
 
 void tester1();
 /* prints a 'here i am' message' */

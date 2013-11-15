@@ -7,8 +7,9 @@
 //============================================================================
 
 #include <iostream>
-#include "tester1.cpp"
+
 using namespace std;
+#include "Tester1.cpp"
 
 int main() {
 	cout << "updated a second time" << endl;
