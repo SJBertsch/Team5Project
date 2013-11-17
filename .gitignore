@@ -53,6 +53,7 @@
 *.sdf
 *.opensdf
 *.unsuccessfulbuild
+*.vcxproj
 ipch/
 [Oo]bj/
 [Bb]in
