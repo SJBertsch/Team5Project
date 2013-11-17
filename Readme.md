@@ -1,1 +1,0 @@
-**some readme info in Github flavored markdown**
