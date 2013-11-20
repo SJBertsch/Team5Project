@@ -1,6 +1,12 @@
 #ifndef CONTACTS_H
 #define CONTACTS_H
 
+#include <iostream>
+#include "record.h"
+
+using namespace std;
+
+
 /*
 One object of class Contacts contains an array of Record objects of size MAXRECORDS.
 Class contains methods for:

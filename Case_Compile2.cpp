@@ -7,12 +7,10 @@
 //testing revision from sebastian
 //testing revision from derrick
 #include <iostream>
-using namespace std;
-
 #include "record.h"
 #include "contacts.h"
-#include "record.cpp"
-#include "contacts.cpp"
+
+using namespace std;
 
 int main(){ //PH
 // Tests classes Record and Contacts

@@ -1,6 +1,7 @@
 //
 // Methods for Class Record // PH
 //
+#include "record.h"
 
 int Record::inputRecord(Record person){
 /* fills Record with info from the user and returns a status code */

@@ -2,6 +2,8 @@
 // Methods for Class Contacts //PH
 //
 
+#include "contacts.h"
+
 Contacts::Contacts(){
 /* initializes private variables */
    recordCounter = 99;  //Application should initialize to 0

@@ -1,6 +1,10 @@
 #ifndef RECORD_H
 #define RECORD_H
 
+#include <iostream>
+
+using namespace std;
+
 /* 
 One object of class Record stores name, address, email, phone and notes.
 Class contains methods for input and display of a Record with the console.
