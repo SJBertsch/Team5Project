@@ -9,7 +9,6 @@
 #include <iostream>
 #include "record.h"
 #include "contacts.h"
-
 #include "compatibility.h"
 
 using namespace std;
