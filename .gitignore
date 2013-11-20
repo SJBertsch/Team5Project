@@ -1,6 +1,3 @@
-#for cross platform compatibaility
-compatibility.h
-
 # Compiled Object files
 *.slo
 *.lo
