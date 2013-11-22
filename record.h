@@ -3,26 +3,36 @@
 
 /* 
 One object of class Record stores name, address, email, phone and notes.
-Class contains methods for input and display of a Record with the console.
+Class contains methods for input & output of a Record with the console & disk.
 */
-class Record { //PH
+class Record { // PH
 private:
    string lastName;
    string firstName;
    string streetAddress;
    string city;
    string state;
-   long int zip;
+   string zip;
    string email;
-   int areaCode;
-   long int phone;
+   string phone;
    string notes;
 public:
-   int inputRecord(Record person);
-   /* fills Record with info from the user and returns a status code */
+   void Record::inputRecord();
+   /* fills temp with contact info */
 
-   void printRecord(string name);
+   void printRecord();
    /* displays Record with last name 'name' to the console */
+
+   Record getRecord();
+   /* returns contents of Record */
+
+   void putRecord(Record input);
+   /* puts contents of input into Record */
+
+   string getLastName();
+   /* returns lastName in Record */
 };
 
 #endif
+
+////////////////////////// END of record.h ////////////////////////
