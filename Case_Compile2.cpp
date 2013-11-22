@@ -1,72 +1,72 @@
-// Case_compile2.cpp : Defines the entry point for the console application.
 //
 // Module contains test main() for classes Record and Contacts to demonstrate
 // that all methods can be called and will response.
 
-//testing revision from dillon
-//testing revision from sebastian
-//testing revision from derrick
 #include <iostream>
+using namespace std;
 #include "record.h"
 #include "contacts.h"
+#include "compatibility.h" // required for compatibility with Eclipse IDE on Mac
 
-using namespace std;
-
-int main(){ //PH
+int main(){ // PH
 // Tests classes Record and Contacts
    int status=0;
 
    cout << "Testing classes Record and Contacts \n\n";
    Contacts list; //constructs Contacts list object including memory allocation
-   
-   cout << "Constructor called and setRecordCounter called (expect 99): " 
-      << list.getRecordCounter() << "\n\n";
 
-   status = list.readContacts(); // reads Contacts list
-   cout << "readContacts returns status code (expect 97): " << status << "\n\n";
-
-   list.printContacts();
+   status = list.readContacts();
+   cout << "\nStatus from list.readContacts is: " << status << " Expecting 97.\n";
 
    status = list.enterNew();
-   cout << "enterNew returns status code (expect 95): " << status << "\n\n";
+   cout << "\nStatus from list.enterNew is: " << status << " Expecting 95.\n";
 
-   status = list.findPrintRecord();
-   cout << "enterNew returns status code (expect 94): " << status << "\n\n";
+   status = list.findRecord(0,"Paul");
+   cout << "\nStatus from list.findRecord is: " << status << " Expecting 94.\n";
 
-   list.swapRecords(1,2);
- 
+   status = list.printFind("Paul");
+   cout << "\nStatus from list.printFind is: " << status << " Expecting 92.\n";
+
+   list.swapRecords(0,1);
+   list.printContacts();
+
    status = list.closeContacts();
-   cout << "Exiting QualitySoft Application with status (expect 96): " 
-      << status << "\n\n";
+   cout << "\nStatus from list.closeContacts is: " << status << " Expecting 96.\n";
 
 	return 0;
 }
 
-//////////////////////// END OF MODULE ////////////////////////////////////////
+//////////////////////// END OF MODULE -- MAIN ///////////////////////////////
 
-/************************************ OUTPUT *********************************
+/***************************** OUTPUT ****************************************
 Testing classes Record and Contacts
 
-Arrived at getRecordCounter
-Constructor called and setRecordCounter called (expect 99): 99
+Constructor called
 
 Arrived at readContacts
-readContacts returns status code (expect 97): 97
+Filename is: contacts.cs2
+ Arrived at Record::putRecord
+Status from list.readContacts is: 97 Expecting 97.
 
-Arrived at printContacts
-Arrived at inputRecord
-Status from inputRecord is (expect 98): 98
+Arrived at enterNew for entry #0
 
-Arrived at printRecord
-Arrived at enterNew
-enterNew returns status code (expect 95): 95
+ Arrived at Record::putRecord
+Status from list.enterNew is: 95 Expecting 95.
 
-Arrived at findPrintRecord
-enterNew returns status code (expect 94): 94
+Arrived at findRecord
 
-Arrived at swapRecords
+Status from list.findRecord is: 94 Expecting 94.
+
+Arrived at Contacts::printFind
+Arrived at Record::getLastName
+Returned name is: paul
+Status from list.printFind is: 92 Expecting 92.
+Arrived at Contacts::swapRecords
+Arrived at Contacts::printContacts
+Arrived at Record::printRecord
 Arrived at closeContacts
-Exiting QualitySoft Application with status (expect 96): 96
 
+Arrived at Record::getRecord
+Status from list.closeContacts is: 96 Expecting 96.
 Press any key to continue . . .
-******************************************************************************/
+***********************************************************************/
