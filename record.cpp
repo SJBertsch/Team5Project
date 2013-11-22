@@ -12,11 +12,14 @@ using namespace std;
 using std::stringstream;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 void Record::printRecord(){
 /* displays Record with last name 'name' to the console */
    cout << "Arrived at Record::printRecord \n";
 
 =======
+=======
+>>>>>>> e865e9d34026ee038109a37bc16c56e0dce06005
 void Record::inputRecord(){
 /* fills Record with contact info */
 
@@ -54,7 +57,10 @@ void Record::printRecord(){
    cout << "email is: " << email << endl;
    cout << "Phone is: " << phone << endl;
    cout << "Notes is: " << notes << endl;
+<<<<<<< HEAD
 >>>>>>> 042346a3598c17f9448b07061306547d7e0e7706
+=======
+>>>>>>> e865e9d34026ee038109a37bc16c56e0dce06005
 }
 
 Record Record::getRecord(){ // PH
@@ -93,4 +99,8 @@ string Record::getLastName(){
    // return lastName;
    return "paul"; // REMOVE: test code only
 }
+<<<<<<< HEAD
    /////////////////////// END OF MODULE --  record.cpp  ////////////////////
+=======
+   /////////////////////// END OF MODULE --  record.cpp  ////////////////////
+>>>>>>> e865e9d34026ee038109a37bc16c56e0dce06005

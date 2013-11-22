@@ -16,16 +16,24 @@ const string CONTACTSFILE = "contacts.cs2"; // local directory file name for cla
 class Contacts { // PH
 private:
 <<<<<<< HEAD
+<<<<<<< HEAD
    static const int MAXRECORDS = 1000;
 =======
    static const int MAXRECORDS = 10;
 >>>>>>> 042346a3598c17f9448b07061306547d7e0e7706
+=======
+   static const int MAXRECORDS = 10;
+>>>>>>> e865e9d34026ee038109a37bc16c56e0dce06005
    Record person[MAXRECORDS];
    int recordCounter; /* contains number of populated records in person[] */
 public:
    Contacts();
    /* initializes private variables */
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> e865e9d34026ee038109a37bc16c56e0dce06005
    int readContacts();
    /* reads all Record objects in class from disk and returns a status code. */
 
@@ -50,4 +58,8 @@ public:
 
 #endif
 
+<<<<<<< HEAD
 ////////////////////////// END of contacts.h ////////////////////////
+=======
+////////////////////////// END of contacts.h ////////////////////////
+>>>>>>> e865e9d34026ee038109a37bc16c56e0dce06005

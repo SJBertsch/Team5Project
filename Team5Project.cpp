@@ -14,10 +14,10 @@ int main(){ // PH
 
    cout << "Testing classes Record and Contacts \n\n";
    Contacts list; //constructs Contacts list object including memory allocation
-
+   
    status = list.readContacts();
    cout << "\nStatus from list.readContacts is: " << status << " Expecting 97.\n";
-
+   
    status = list.enterNew();
    cout << "\nStatus from list.enterNew is: " << status << " Expecting 95.\n";
 
