@@ -3,8 +3,6 @@
 // Module contains test main() for classes Record and Contacts to demonstrate
 // that all methods can be called and will response.
 
-//testing revision from dillon
-//testing revision from sebastian
 #include <iostream>
 using namespace std;
 
@@ -20,7 +18,7 @@ int main(){ //PH
    cout << "Testing classes Record and Contacts \n\n";
    Contacts list; //constructs Contacts list object including memory allocation
    
-   cout << "Constructor called and setRecordCounter called (expect 99): " 
+   cout << "Constructor calledand setRecordCounter called (expect 99): "
       << list.getRecordCounter() << "\n\n";
 
    status = list.readContacts(); // reads Contacts list
